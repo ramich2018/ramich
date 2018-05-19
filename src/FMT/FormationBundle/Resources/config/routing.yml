@@ -1,0 +1,35 @@
+formation_formateur:
+        resource: "@FormationBundle/Resources/config/routing/formateur.yml"
+        prefix:   /formateur
+
+formation_inscription:
+        resource: "@FormationBundle/Resources/config/routing/inscription.yml"
+        prefix:   /inscription
+
+formation_formation:
+        resource: "@FormationBundle/Resources/config/routing/formation.yml"
+        prefix:   /formation
+
+formation_specialite:
+        resource: "@FormationBundle/Resources/config/routing/specialite.yml"
+        prefix:   /specialite
+
+formation_contact:
+    resource: "@FormationBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact
+
+formation_user:
+        resource: "@FormationBundle/Resources/config/routing/user.yml"
+        prefix:   /user
+
+formation_etudiant:
+        resource: "@FormationBundle/Resources/config/routing/etudiant.yml"
+        prefix:   /etudiant
+
+formation_homepage:
+    path:     /
+    defaults: { _controller: FormationBundle:Default:index }
+
+formation_testBlock:
+    path:     /testBlock
+    defaults: { _controller: FormationBundle:Default:index2 }
